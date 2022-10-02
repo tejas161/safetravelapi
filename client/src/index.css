@@ -1,0 +1,568 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Oswald:wght@600&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html{
+  font-size:16px;
+}
+
+/* for text in body of any component */
+.blu-font{
+  font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+/* for the heading of any list/form/component */
+.font-h{
+  font-family: 'Bakbak One', cursive;
+}
+
+@media(max-width:998px)
+{
+  html{
+    font-size:80%;
+  }
+}
+
+@media(max-width:768px)
+{
+  html{
+    font-size:70%;
+  }
+}
+
+@keyframes bgcolor {
+  0% {
+      background-color: #2a2a2b
+  }
+
+  30% {
+      background-color: #39393a
+  }
+
+  60% {
+      background-color: #4a4a4d
+  }
+
+  90% {
+      background-color: #2a2a2b
+  }
+
+  100% {
+      background-color: #39393a
+  }
+}
+
+body {
+  -webkit-animation: bgcolor 20s infinite;
+  animation: bgcolor 10s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+
+
+/*-------------------------------------- start   of---------------------------------------------------------
+----------------------------------------- Navbar Page ----------------------------------------------------- */
+.p-home{
+  cursor: pointer;
+}
+.navbar-brand{
+  font-size:1.8rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar-toggler:hover{
+  border:2px solid rgb(13, 58, 19);
+}
+
+
+.navu-link:hover{
+  background-color:rgb(83, 79, 79);
+  
+}
+
+.navbar-nav{
+  font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+
+/*-------------------------------------- end   of---------------------------------------------------------
+----------------------------------------- Navbar Page ----------------------------------------------------- */
+
+
+/*-------------------------------------- start   of---------------------------------------------------------
+----------------------------------------- Body Page ----------------------------------------------------- */
+
+
+
+
+.div-body{
+  width:60%;
+  height:28rem;
+  margin-top: 10rem;
+  border:0.1rem solid white;
+  
+}
+
+.search-body input{
+  width:60%;
+  height:3rem;
+  border-radius: 2rem;
+  border:2px solid grey;
+
+}
+
+
+.search-body input:hover{
+  border:2px solid black;
+
+}
+
+
+.search-heading h3 {
+  font-size:1.2rem;
+  width:90%;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.1rem solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.2rem; /* Adjust as needed */
+  animation: 
+    typing 2s steps(30, end),
+    blink-caret .50s step-end infinite;
+}
+
+.hide{
+  display:none;
+}
+
+.sync-class{
+  display:inline-block;
+ 
+  width:50%;
+  height:3.5rem;
+  border-radius: 0.5rem;
+  border:2px solid rgb(7, 17, 165);
+  background-color: rgb(40, 72, 252);
+  font-family: 'Bebas Neue', cursive;
+  font-size:1.3rem;
+  color:white;
+}
+
+
+.show-class{
+  display:inline-block;
+ 
+  width:50%;
+  height:3rem;
+  border-radius: 0.5rem;
+  border:2px solid rgb(6, 172, 56);
+  background-color: rgb(64, 202, 37);
+  font-family: 'Bebas Neue', cursive;
+  font-size:1.1rem;
+  
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 60% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+.btn-body{
+  
+  width:50%;
+  height:3rem;
+  border-radius: 0.5rem;
+  border:2px solid rgb(187, 46, 46);
+  background-color: rgb(187, 46, 46);
+  font-family: 'Bebas Neue', cursive;
+  font-size:1.3rem;
+  
+
+}
+.btn-body:hover{
+  border:2px solid rgb(134, 14, 14);
+  background-color: rgb(190, 24, 24);;
+  
+}
+
+/*-------------------------------------- end   of---------------------------------------------------------
+----------------------------------------- Body Page ----------------------------------------------------- */
+
+
+/*-------------------------------------- start   of---------------------------------------------------------
+----------------------------------------- Footer Page ----------------------------------------------------- */
+.footer-sect{
+  margin-top: 5rem;
+  
+   
+  
+ height:100%;
+   
+   width:100%;
+   position:relative;
+   bottom:0;
+   height:60vh;
+}
+.footer-div1{
+  display:flex;
+  flex-direction: row;
+   
+}
+
+.footer-div1 li{
+  list-style: none;
+}
+
+.f-subdiv{
+  margin:2rem auto;
+}
+.f-subdiv .subdiv-mainh
+{
+  font-size: 1.2rem;
+}
+
+.f-subdiv .subdiv-bodyh
+{
+  font-size: 1rem;
+}
+
+.footer-fa {
+  margin:0.2rem;
+  padding: 0.6rem;
+  font-size: 1.4rem;
+  width: 2.8rem;
+  height:2.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer-fa:hover {
+  opacity: 0.7;
+}
+
+ .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #e63d3d;
+  color: white;
+}
+
+
+.fa-linkedin {
+  background: #3B5998;
+  color: white;
+}
+
+.email-footer .input-email{
+  border:none;
+  outline:none;
+  border-radius: 0.2rem;
+  width:50%;
+  
+}
+
+.email-footer .input-email:hover{
+  border:2px solid rgb(114, 114, 250);
+  
+  
+}
+
+.email-footer .btn-email{
+  margin-left:0.1rem;
+  border:none;
+ 
+  outline:none;
+ 
+ 
+  
+}
+
+.email-footer .btn-email:hover{
+  background-color: rgb(235, 225, 211);
+  height:1.5rem;
+  width:2.1rem;
+ 
+ 
+  
+}
+
+
+.email-footer .email-f-icon
+{
+  
+  font-size:1.2rem;
+  width:2rem;
+  
+  
+}
+
+
+
+/*-------------------------------------- end   of---------------------------------------------------------
+----------------------------------------- Footer Page ----------------------------------------------------- */
+
+/*-------------------------------------- start   of---------------------------------------------------------
+----------------------------------------- Result Page ----------------------------------------------------- */
+.res{
+  background-color: rgb(82, 79, 79);
+  border:0.1rem solid black;
+  
+ 
+}
+
+.res-mainh{
+  font-size:3rem;
+  text-transform: capitalize;
+  
+}
+
+.res-bodyt{
+  font-size: 2rem;
+  
+}
+.fa-sun{
+  
+  color:yellow;
+}
+
+.fa-moon{
+  color:rgb(73, 12, 73);
+}
+  
+
+.sun{
+  color: rgb(236, 236, 86);
+}
+
+.moon{
+  color: rgb(132, 57, 207);
+}
+
+
+
+.temp-c{
+  color:rgb(78, 214, 78);
+}
+
+.temp-f{
+  color: rgb(245, 73, 73);
+}
+
+.wind{
+  color: rgb(86, 86, 216);
+}
+.condt{
+  color: rgb(236, 68, 208);
+} 
+/*-------------------------------------- end   of---------------------------------------------------------
+----------------------------------------- Result Page ----------------------------------------------------- */
+
+/*-------------------------------------- start   of---------------------------------------------------------
+----------------------------------------- contact Page ----------------------------------------------------- */
+
+.contact-section{
+  display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-container{
+ 
+    background-color:#fff;
+    border-radius:10px;
+    --webkit-border-radius: 10px;
+    box-shadow:0 2.8px 2.2px rgba(0,0,0,0.034), 0 6.7px 5.3px rgba(0 ,0 ,0, 0.048),0 12.7 10.4px rgba(0 ,0 ,0, 0.088);
+    overflow:hidden;
+    width:calc(100vw - 55vw);
+    max-width:100%;
+   
+
+}
+
+
+.header{
+  background:#9face6;
+  padding:1rem 0;
+}
+
+.header h2{
+  color:#222;
+
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-align:center;
+}
+.form{
+  padding:2.1rem;
+}
+
+.form-controlf{
+  margin-bottom:1.6rem;
+  position: relative;
+ 
+}
+
+.form-controlf label{
+  display:inline-block;
+  color:black;
+  margin-bottom:0.2rem;
+}
+
+.form-controlf input{
+  width:100%;
+  border:2px solid rgba(202, 211, 211, 0.801);
+  border-radius: 0.2rem;
+  display:block;
+  font-size:1rem;
+  padding:0.2rem;
+}
+
+.form-controlf input:focus{
+  outline:0;
+  border-color:#777;
+}
+
+
+.form-controlf.success input{
+  border-color:#2ecc71;
+}
+
+.form-controlf.success textarea{
+  border-color:#2ecc71;
+}
+
+.form-controlf.error input{
+  border-color:#e74c3c;
+}
+
+.form-controlf.error textarea{
+  border-color:#e74c3c;
+}
+
+.form-controlf i{
+  position:absolute;
+  right:8px;
+  top:35px;
+  visibility: hidden;
+}
+
+
+
+
+.form-controlf.success i.fa-check-circle{
+  color:#2ecc71;
+  visibility: visible;
+}
+
+.form-controlf.error i.fa-exclamation-circle{
+  color:#e74c3c;;
+  visibility: visible;
+}
+
+
+.form-controlf small{
+ color:#e74c3c;
+ position:absolute;
+
+ left:0;
+ visibility: hidden;
+
+}
+
+
+.form-controlf.error small{
+  visibility: visible;
+
+}
+
+
+.input-concern{
+  
+  height:5rem;
+  width:100%;
+  border:2px solid rgba(202, 211, 211, 0.801);
+  border-radius: 0.2rem;
+  display:block;
+  font-size:1rem;
+  padding:0.1rem;
+  
+  
+}
+
+.input-concern:focus{
+  outline:0;
+  border-color:#777;
+}
+.form .btn-s{
+  background: #9face6;
+  border-radius: 6px;
+  border:none;
+  outline:none;
+  color:#fff;
+  display:block;
+  
+  font-size:1.2rem;
+  padding:0.8rem;
+  margin-top:1.2rem;
+  width:100%;
+  font-weight:bold;
+  text-transform: uppercase;
+  transition: all 1s ease;
+  height:3rem;
+}
+
+.form .btn-s:hover{
+  background: linear-gradient(to right, #74ebd5, #9face6);
+  color:black;
+}
+
+@media(max-width:998px){
+  .contact-container{
+      width:calc(100vw - 40vw);
+      max-width:100%;
+  }
+
+.form-controlf i{
+  position:absolute;
+  right:5px;
+  top:28px;
+  visibility: hidden;
+}
+
+}
+
+@media(max-width:766px){
+  
+
+.form-controlf i{
+  position:absolute;
+  right:6px;
+  top:24px;
+  visibility: hidden;
+}
+
+
+}
+/*-------------------------------------- end   of---------------------------------------------------------
+----------------------------------------- contact Page ----------------------------------------------------- */
