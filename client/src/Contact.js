@@ -159,7 +159,13 @@ const Contact = () => {
                   })
                
                   setTimeout(() => {
-                    window.location.href="/contactjs";
+                    // window.location.href="/contactjs";
+                    userData.name="";
+                 userData.email="";
+                  userData.phone="";
+                   userData.city="";
+                    userData.concern="";
+
                   },3000)
         
                   
